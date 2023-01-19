@@ -25,8 +25,8 @@ convertBtn.addEventListener("click", () => {
 
   volumeEl.textContent = `${baseValue} liter = ${(
     baseValue * literToGallon
-  ).toFixed(3)} feet`;
+  ).toFixed(3)} gallon`;
   massEl.textContent = `${baseValue} kilo = ${(baseValue * kiloToPound).toFixed(
     3
-  )} feet`;
+  )} pound`;
 });

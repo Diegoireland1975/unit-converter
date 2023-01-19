@@ -10,27 +10,32 @@ body {
   display: inline-block;
   margin: 1rem 0;
   cursor: pointer;
+  font-weight: bolder;
 }
 .container {
   max-width: 800px;
   width: 90%;
 }
 input {
-  border: none;
+  outline: none;
   border: 2px solid #b295ff;
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
-  width: 117px;
-  height: 83px;
+  max-width: 217px;
+  height: auto;
   display: block;
-  font-size: 58px;
+  font-size: 3rem;
   line-height: 24px;
+  background: #6943ff;
+}
+::placeholder {
+  color: #fff;
 }
 h1 {
   color: #fff;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 1.3rem;
   line-height: 38px;
 }

@@ -4,7 +4,7 @@
 1 kilogram = 2.204 pound
 */
 const meterToFeet = 3.281;
-const meterToMile = 0.00062;
+const KilometerToMile = 0.62;
 const literToGallon = 0.264;
 const kiloToPound = 2.204;
 const input = document.getElementById("input");
@@ -19,8 +19,8 @@ convertBtn.addEventListener("click", () => {
   heigthEl.textContent = `${baseValue} meter = ${(
     baseValue * meterToFeet
   ).toFixed(3)} feet`;
-  lengthEl.textContent = `${baseValue} meter = ${(
-    baseValue * meterToMile
+  lengthEl.textContent = `${baseValue} kilometer = ${(
+    baseValue * KilometerToMile
   ).toFixed(3)} mile`;
 
   volumeEl.textContent = `${baseValue} liter = ${(

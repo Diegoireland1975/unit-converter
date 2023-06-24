@@ -13,19 +13,21 @@ const heigthEl = document.getElementById("heigth-el");
 const lengthEl = document.getElementById("length-el");
 const volumeEl = document.getElementById("volume-el");
 const massEl = document.getElementById("mass-el");
-
+// METER TO FEET
 convertBtn.addEventListener("click", () => {
   let baseValue = input.value;
   heigthEl.textContent = `${baseValue} meter = ${(
     baseValue * meterToFeet
   ).toFixed(3)} feet`;
+  // KILOMETER TO MILE
   lengthEl.textContent = `${baseValue} kilometer = ${(
     baseValue * KilometerToMile
   ).toFixed(3)} mile`;
-
+  // LITER TO GALLOM
   volumeEl.textContent = `${baseValue} liter = ${(
     baseValue * literToGallon
   ).toFixed(3)} gallon`;
+  // KILO TO POUND
   massEl.textContent = `${baseValue} kilo = ${(baseValue * kiloToPound).toFixed(
     3
   )} pound`;
